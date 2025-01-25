@@ -1,0 +1,124 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+}
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de Admisiones */
+.admissions-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #e8f0fe;
+}
+
+.admissions-section h1 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.admissions-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.faculties-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Tarjetas de facultades */
+.faculty-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.faculty-card h2 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.career-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.career-list li {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.career-list button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4089d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Pie de página */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #003366;
+  color: white;
+}

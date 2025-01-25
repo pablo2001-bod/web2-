@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Virtual - Universidad X</title>
+  <link rel="stylesheet" href="biblioteca.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div >
+        <h1>Universidad UNIE
+        </h1>
+        </div>    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="oferta.html">Oferta Académica</a></li>
+        <li><a href="admisiones.html">facultades</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="campus.html">Campus Virtual</a></li>
+        <li><a href="biblioteca.html">Biblioteca Virtual</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Biblioteca Virtual -->
+  <section class="library-section">
+    <h1>Biblioteca Virtual</h1>
+    <p>Accede a recursos académicos para potenciar tu aprendizaje.</p>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Buscar por título o autor...">
+      <select id="category-filter">
+        <option value="all">Todas las categorías</option>
+        <option value="ciencia">Ciencia</option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="historia">Historia</option>
+        <option value="arte">Arte</option>
+      </select>
+      <button id="search-btn">Buscar</button>
+    </div>
+
+    <!-- Resultados -->
+    <div class="resources-container" id="resources-container">
+      <!-- Las tarjetas de libros se generan dinámicamente desde biblioteca.js -->
+    </div>
+
+    <!-- Visor de PDF -->
+    <div id="pdf-viewer" class="pdf-viewer" style="display: none;">
+      <button id="close-pdf" class="close-btn">Cerrar</button>
+      <iframe id="pdf-frame" src="" width="100%" height="500px"></iframe>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>2025 UNIE - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="biblioteca.js"></script>
+</body>
+</html>

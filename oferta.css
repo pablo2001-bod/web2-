@@ -1,0 +1,144 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+}
+
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor de ofertas */
+.offer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjetas de oferta */
+.offer-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.offer-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.offer-card h2 {
+  margin: 10px 0;
+}
+
+.offer-card p {
+  color: #555;
+}
+
+.inscripcion-btn {
+  background-color: #2e3b4e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.inscripcion-btn:hover {
+  background-color: #1d2a3a;
+}
+
+/* Formulario de inscripción */
+.inscripcion-container {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inscripcion-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inscripcion-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inscripcion-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inscripcion-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.inscripcion-container button {
+  background-color: #2e3b4e;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inscripcion-container button:hover {
+  background-color: #1d2a3a;
+}
+
+/* Pie de página */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #003366;
+  color: white;
+}

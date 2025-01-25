@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias - Universidad X</title>
+  <link rel="stylesheet" href="noticias.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div >
+      <h1>Universidad UNIE
+      </h1>
+      </div>
+      <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="oferta.html">Oferta Académica</a></li>
+        <li><a href="admisiones.html">Facultades</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="campus.html">Campus Virtual</a></li>
+        <li><a href="biblioteca.html">Biblioteca Virtual</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de filtro -->
+  <section class="news-filter">
+    <h1>Noticias</h1>
+    <p>Entérate de las últimas novedades de nuestra universidad.</p>
+    <div class="filter-buttons">
+      <button data-category="all" class="active">Todos</button>
+      <button data-category="eventos">Eventos</button>
+      <button data-category="academicas">Académicas</button>
+      <button data-category="comunidad">Comunidad</button>
+    </div>
+  </section>
+
+  <!-- Listado de noticias -->
+  <section class="news-list" id="news-list">
+    <div class="news-card" data-category="eventos">
+      <img src="images/feria.jpg" alt="Feria Universitaria">
+      <h2>Feria Universitaria</h2>
+      <p>Descubre lo que la Universidad X tiene para ofrecerte.</p>
+      <button class="details-btn" data-details="Participa en la Feria Universitaria para conocer todas las oportunidades que ofrece nuestra universidad.">Leer más</button>
+    </div>
+    <div class="news-card" data-category="academicas">
+      <img src="images/cursos.jpg" alt="Cursos de Verano">
+      <h2>Nuevos Cursos de Verano</h2>
+      <p>Ampliamos nuestra oferta académica para este verano.</p>
+      <button class="details-btn" data-details="Consulta la lista de cursos disponibles y mejora tus habilidades este verano.">Leer más</button>
+    </div>
+    <div class="news-card" data-category="comunidad">
+      <img src="images/donacion.jpg" alt="Jornada de Donación">
+      <h2>Jornada de Donación</h2>
+      <p>Únete a nuestra campaña de apoyo a la comunidad.</p>
+      <button class="details-btn" data-details="Contribuye a esta causa solidaria participando en nuestra jornada de donación.">Leer más</button>
+    </div>
+    <div class="news-card" data-category="eventos">
+      <img src="images/cultural.jpg" alt="Semana Cultural">
+      <h2>Semana Cultural</h2>
+      <p>Disfruta de actividades culturales y recreativas.</p>
+      <button class="details-btn" data-details="Explora exposiciones, música y mucho más durante nuestra Semana Cultural.">Leer más</button>
+    </div>
+    <div class="news-card" data-category="academicas">
+      <img src="images/becas.jpg" alt="Becas 2025">
+      <h2>Becas 2025</h2>
+      <p>Consulta la convocatoria para becas de este ciclo escolar.</p>
+      <button class="details-btn" data-details="Revisa los requisitos, fechas y beneficios de las becas que ofrecemos este año.">Leer más</button>
+    </div>
+    <div class="news-card" data-category="eventos">
+      <img src="images/deporte.jpg" alt="Festival Deportivo">
+      <h2>Festival Deportivo</h2>
+      <p>Participa en nuestras actividades deportivas.</p>
+      <button class="details-btn" data-details="Únete a las competencias y talleres deportivos en nuestro Festival Deportivo anual.">Leer más</button>
+    </div>
+    <div class="news-card" data-category="comunidad">
+      <img src="images/voluntariado.jpg" alt="Voluntariado Estudiantil">
+      <h2>Voluntariado Estudiantil</h2>
+      <p>Haz la diferencia en la comunidad.</p>
+      <button class="details-btn" data-details="Participa como voluntario en los proyectos sociales de nuestra universidad.">Leer más</button>
+    </div>
+  </section>
+
+  <!-- Modal emergente -->
+  <div id="news-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title">Título</h2>
+      <p id="modal-details">Detalles de la noticia.</p>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>2025 UNIE - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="noticias.js"></script>
+</body>
+</html>

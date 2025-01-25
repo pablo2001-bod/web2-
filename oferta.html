@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidad UNIE - Oferta Académica</title>
+  <link rel="stylesheet" href="oferta.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div >
+      <h1>Universidad UNIE
+      </h1>
+      </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="oferta.html">Oferta Académica</a></li>
+        <li><a href="admisiones.html">Facultades</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="campus.html">Campus Virtual</a></li>
+        <li><a href="biblioteca.html">Biblioteca Virtual</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor de las ofertas -->
+  <div class="offer-container">
+    <div class="offer-card">
+      <img src="https://escueladeposgrado.edu.pe/wp-content/uploads/2020/11/Importancia-de-los-Sistema-de-Informacion-en-una-empresa-scaled.jpg" alt="Ingeniería en Sistemas" class="offer-image">
+      <h2>Ingeniería en Sistemas</h2>
+      <p>Formación en desarrollo de software, redes y gestión de sistemas informáticos.</p>
+      <p><strong>Precio: $3,200 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería en Sistemas')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://cdn.udax.edu.mx/blog/el-papel-crucial-de-la-seguridad-industrial-y-el-analisis-de-riesgos-en-la-ingenieria-industrial.jpg" alt="Ingeniería Industrial" class="offer-image">
+      <h2>Ingeniería Industrial</h2>
+      <p>Estudios en optimización de procesos, gestión de operaciones y control de calidad.</p>
+      <p><strong>Precio: $3,000 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería Industrial')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://www.amaitlp.org/wp-content/uploads/2021/03/1501852521_189306_1501852585_noticia_normal.jpg" alt="Licenciatura en Psicología" class="offer-image">
+      <h2>Psicología</h2>
+      <p>Capacitación en psicología clínica, organizacional y educativa.</p>
+      <p><strong>Precio: $2,800 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Psicología')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://micarrerauniversitaria.com/wp-content/uploads/2018/02/ingenieria-electronica-21.png" alt="Ingeniería en Electrónica" class="offer-image">
+      <h2>Ingeniería en Electrónica</h2>
+      <p>Formación en circuitos electrónicos, sistemas embebidos y automatización industrial.</p>
+      <p><strong>Precio: $3,500 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería en Electrónica')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://ss-static-01.esmsv.com/id/60419/galeriaimagenes/obtenerimagen/?id=90&tipoEscala=stretch&width=977&height=733" alt="Ingeniería Civil" class="offer-image">
+      <h2>Ingeniería Civil</h2>
+      <p>Formación en diseño de infraestructuras, construcción y gestión de proyectos civiles.</p>
+      <p><strong>Precio: $3,400 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería Civil')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://www.mujeringeniera.com/uploads/1661648953a8368.jpg" alt="Ingeniería Mecánica" class="offer-image">
+      <h2>Ingeniería Mecánica</h2>
+      <p>Estudios en diseño de maquinaria, termodinámica y sistemas mecánicos.</p>
+      <p><strong>Precio: $3,600 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería Mecánica')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://blog.uvm.mx/hs-fs/hubfs/Blog_Contenido/NPs/ingenieria-ejecutiva-en-software-y-redes-uvm.jpg?width=800&name=ingenieria-ejecutiva-en-software-y-redes-uvm.jpg" alt="Ingeniería en Software" class="offer-image">
+      <h2>Ingeniería en Software</h2>
+      <p>Formación en desarrollo de aplicaciones, programación avanzada y testing de software.</p>
+      <p><strong>Precio: $3,200 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería en Software')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://www.nosequeestudiar.net/site/assets/files/50104/ingenieria-quimica.jpg" alt="Ingeniería Química" class="offer-image">
+      <h2>Ingeniería Química</h2>
+      <p>Estudios sobre procesos químicos, control de calidad y producción industrial.</p>
+      <p><strong>Precio: $3,300 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería Química')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://db0dce98.rocketcdn.me/es/files/2024/07/Telecomunicacione-datascientest2.jpg" alt="Ingeniería en Telecomunicaciones" class="offer-image">
+      <h2>Telecomunicaciones</h2>
+      <p>Formación en redes de comunicación, transmisión de datos y tecnología inalámbrica.</p>
+      <p><strong>Precio: $3,500 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Telecomunicaciones')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://www.sierolam.com/wp-content/uploads/2024/06/mano-plantando-un-arbol-aplicando-ingenieria-ambiental.jpg" alt="Ingeniería Ambiental" class="offer-image">
+      <h2>Ingeniería Ambiental</h2>
+      <p>Formación para gestionar el impacto ambiental de proyectos y procesos industriales.</p>
+      <p><strong>Precio: $3,100 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería Ambiental')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://cms.areandina.edu.co/sites/default/files/styles/large/public/2022-08/ingenieria-biomedica.jpg?itok=BskUlWcH" alt="Ingeniería Biomédica" class="offer-image">
+      <h2>Biomédica</h2>
+      <p>Formación en el desarrollo de tecnología para el cuidado de la salud y equipos médicos.</p>
+      <p><strong>Precio: $3,800 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Biomédica')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://img.freepik.com/fotos-premium/concepto-innovacion-ingenieria-automotriz-inspeccion-avanzada-vehiculos_926058-129.jpg?w=360" alt="Ingeniería en Automotriz" class="offer-image">
+      <h2>Ingeniería en Automotriz</h2>
+      <p>Formación especializada en el diseño, manufactura y mantenimiento de vehículos.</p>
+      <p><strong>Precio: $3,200 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería en Automotriz')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://cards.algoreducation.com/_next/image?url=https%3A%2F%2Ffiles.algoreducation.com%2Fproduction-ts%2F__S3__b6d77e0f-c249-4637-8d59-098edae45064&w=3840&q=75" alt="Ingeniería Geológica" class="offer-image">
+      <h2>Geológica</h2>
+      <p>Estudios sobre recursos naturales, minería y evaluación de riesgos geológicos.</p>
+      <p><strong>Precio: $3,400 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Geológica')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://static-wc.arcux.net/uploads/20200529130551/la-arquitectura-1.jpg" alt="Ingeniería en Logística" class="offer-image">
+      <h2>Arquitectura</h2>
+      <p>Formación en diseño, planificación y construcción de espacios urbanos y edificios.</p>
+      <p><strong>Precio: $3,100 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Arquitectura')">Inscribirse</button>
+    </div>
+    
+    <div class="offer-card">
+      <img src="https://www.educarecuador.ec/wp-content/uploads/2023/01/Ingenieria-Aeronautica.jpg" alt="Ingeniería Aeroespacial" class="offer-image">
+      <h2>Ingeniería Aeroespacial</h2>
+      <p>Formación en el diseño y desarrollo de aeronaves y naves espaciales.</p>
+      <p><strong>Precio: $4,000 USD</strong></p>
+      <button class="inscripcion-btn" onclick="showInscripcionForm('Ingeniería Aeroespacial')">Inscribirse</button>
+    </div>
+        
+  </div>
+
+  <!-- Formulario de Inscripción -->
+  <div class="inscripcion-container" id="inscripcion-container">
+    <h2>Inscripción</h2>
+    <form id="inscripcion-form">
+      <p id="selected-course">Selecciona una carrera para inscribirte.</p>
+      <label for="name">Nombre completo:</label>
+      <input type="text" id="name" placeholder="Ingresa tu nombre" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" placeholder="Ingresa tu correo" required>
+      
+      <label for="phone">Teléfono:</label>
+      <input type="tel" id="phone" placeholder="Ingresa tu teléfono" required>
+      
+      <button type="submit">Enviar Inscripción</button>
+    </form>
+  </div>
+      <footer class="footer">
+        <p>2025 UNIE - Todos los derechos reservados.</p>
+      </footer>
+  <script src="oferta.js"></script>
+  
+</body>
+</html>

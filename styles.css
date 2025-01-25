@@ -1,0 +1,147 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+}
+
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+}
+
+/* Misión y Visión */
+.mission-vision-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+
+.mission, .vision {
+  text-align: center;
+  max-width: 500px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.section-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.mission h2, .vision h2 {
+  font-size: 2em;
+  color: #003366;
+  margin: 15px 0;
+}
+
+.mission p, .vision p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Historia */
+.history-section {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #e6e6e6;
+}
+
+.history-content {
+  max-width: 600px;
+}
+
+.history-content h2 {
+  font-size: 2.5em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.history-content p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.history-image {
+  max-width: 400px;
+  width: 100%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+/* Pie de página */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #003366;
+  color: white;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admisiones - Universidad X</title>
+  <link rel="stylesheet" href="admisiones.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div >
+      <h1>Universidad UNIE
+      </h1>
+      </div>
+      <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="oferta.html">Oferta Académica</a></li>
+        <li><a href="admisiones.html">Facultades</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="campus.html">Campus Virtual</a></li>
+        <li><a href="biblioteca.html">Biblioteca Virtual</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Admisiones -->
+  <section class="admissions-section">
+    <h1>Facultades y Carreras</h1>
+    <p>Conoce nuestras facultades y las carreras que ofrecemos para tu futuro profesional.</p>
+
+    <div class="faculties-container">
+      <!-- Facultades dinámicas desde admisiones.js -->
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="career-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>2025 UNIE - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="admisiones.js"></script>
+</body>
+</html>
