@@ -16,52 +16,41 @@ body {
   background-color: #003366;
   color: white;
 }
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
 .navbar ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-
 .navbar li {
   margin: 0 10px;
 }
-
 .navbar a {
   text-decoration: none;
   color: white;
   font-size: 16px;
   transition: color 0.3s;
 }
-
 .navbar a:hover {
   text-decoration: underline;
 }
 
-/* Sección de Admisiones */
+/* Sección de Facultades */
 .admissions-section {
   padding: 40px 20px;
   text-align: center;
   background-color: #e8f0fe;
 }
-
 .admissions-section h1 {
   font-size: 36px;
   color: #003366;
   margin-bottom: 10px;
 }
-
 .admissions-section p {
   font-size: 18px;
   color: #555;
   margin-bottom: 30px;
 }
-
 .faculties-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -69,50 +58,84 @@ body {
   padding: 0 20px;
 }
 
-/* Tarjetas de facultades */
+/* Tarjetas de Facultades */
 .faculty-card {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  text-align: center;
+  text-align: left;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .faculty-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
+.faculty-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 .faculty-card h2 {
   font-size: 24px;
   color: #003366;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-
-.career-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.career-list li {
+.faculty-card p {
   font-size: 16px;
   color: #555;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
-
-.career-list button {
+.youtube-link {
+  display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
   background-color: #4089d2;
   color: white;
-  border: none;
   border-radius: 5px;
+  text-decoration: none;
   font-size: 14px;
-  cursor: pointer;
   transition: background-color 0.3s;
+}
+.youtube-link:hover {
+  background-color: #0056b3;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.modal-content p {
+  font-size: 16px;
+  color: #555;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* Pie de página */

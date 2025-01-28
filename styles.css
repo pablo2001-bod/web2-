@@ -1,6 +1,6 @@
 /* General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +16,16 @@ body {
   background-color: #003366;
   color: white;
 }
+.admissions-section h1 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+.admissions-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #e8f0fe;
+}
 
 .header .logo {
   font-size: 1.5em;
@@ -26,7 +36,7 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0;
+  padding: 0; 
 }
 
 .navbar a {
@@ -144,4 +154,21 @@ body {
   padding: 10px 0;
   background-color: #003366;
   color: white;
+}
+/* Sección del Himno */
+.audio-container {
+  position: center;
+  width: 20%;
+  height: 150px; /* Ajusta la altura según el tamaño que desees para el reproductor */
+  background-image: url('https://culturatungurahua.com/wp-content/uploads/2023/11/89.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el espacio */
+  background-position: center; /* Centra la imagen */
+  border-radius: 8px; /* Opcional, si deseas bordes redondeados */
+  overflow: hidden;
+}
+
+audio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el audio se ajuste al contenedor */
 }

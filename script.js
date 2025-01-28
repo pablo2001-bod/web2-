@@ -23,7 +23,7 @@ function prevSlide() {
   currentIndex = (currentIndex - 1 + slides.length) % slides.length;
   document.querySelector(".carousel-container").style.transform = `translateX(-${currentIndex * 100}%)`;
   showSlide(currentIndex);
-}
+} 
 
 // Event Listeners
 nextBtn.addEventListener("click", nextSlide);

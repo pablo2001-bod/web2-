@@ -56,12 +56,13 @@ body {
   padding: 2rem;
 }
 
-.news-card {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.news-card img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 200px; /* Establece una altura fija para las imágenes */
+  object-fit: cover; /* Recorta la imagen para que encaje perfectamente en las dimensiones */
+  border-radius: 8px; /* Opcional: da bordes redondeados para un diseño más moderno */
 }
+
 
 .news-card h2 {
   font-size: 1.25rem;
