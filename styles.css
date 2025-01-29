@@ -100,13 +100,16 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-}
+} 
 
 .section-image {
   width: 100%;
   border-radius: 8px;
 }
-
+.section-image1 {
+  width:65%;
+  border-radius: 8px;
+}
 .mission h2, .vision h2 {
   font-size: 2em;
   color: #003366;
