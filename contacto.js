@@ -1,4 +1,3 @@
-// Validación del formulario de contacto
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
@@ -17,6 +16,5 @@ contactForm.addEventListener("submit", (e) => {
     formMessage.textContent = "Por favor, completa todos los campos.";
   }
 
-  // Limpia los campos después de mostrar el mensaje
   contactForm.reset();
 });

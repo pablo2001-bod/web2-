@@ -6,16 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDetails = document.getElementById('modal-details');
   const closeBtn = document.querySelector('.close-btn');
 
-  // Filtrar noticias
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       const category = button.getAttribute('data-category');
 
-      // Actualizar botón activo
       filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
 
-      // Mostrar u ocultar tarjetas
       newsCards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
         card.style.display = category === 'all' || cardCategory === category ? 'block' : 'none';
@@ -23,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Mostrar detalles en el modal
   document.querySelectorAll('.details-btn').forEach(button => {
     button.addEventListener('click', () => {
       const details = button.getAttribute('data-details');
@@ -35,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Cerrar el modal
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   });

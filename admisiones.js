@@ -1,4 +1,3 @@
-// Datos de facultades y carreras
 const faculties = [
   {
     name: "Facultad de Ingeniería",
@@ -186,19 +185,15 @@ const faculties = [
       }
     ]
   },
-  // Añadir las otras facultades siguiendo el mismo formato...
 ];
 
-// Contenedor de facultades
 const facultiesContainer = document.querySelector(".faculties-container");
 
-// Elementos del modal
 const modal = document.getElementById("career-modal");
 const modalTitle = document.getElementById("modal-title");
 const modalDescription = document.getElementById("modal-description");
 const closeModal = document.getElementById("close-modal");
 
-// Generar HTML dinámico para las facultades y carreras
 faculties.forEach((faculty) => {
   const facultyCard = document.createElement("div");
   facultyCard.classList.add("faculty-card");
@@ -231,12 +226,10 @@ faculties.forEach((faculty) => {
   facultiesContainer.appendChild(facultyCard);
 });
 
-// Cerrar modal
 closeModal.addEventListener("click", () => {
   modal.style.display = "none";
 });
 
-// Cerrar modal al hacer clic fuera de él
 window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";

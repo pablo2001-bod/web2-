@@ -1,6 +1,4 @@
-// Recursos disponibles en la biblioteca
 const resources = [
-    // Ciencia
     {
       title: "Fundamentos de Física",
       author: "David Halliday",
@@ -60,7 +58,6 @@ const resources = [
       pdf: "https://repositorio.flacsoandes.edu.ec/bitstream/10469/12243/1/RFLACSO-06-Pons.pdf"
     },
   
-    // Historia
     {
       title: "Historia de la Edad Media",
       author: "Georges Duby",
@@ -90,7 +87,6 @@ const resources = [
       pdf: "https://biblioteca.clacso.edu.ar/Mexico/iih-s-uv/20170608043740/pdf_473.pdf"
     },
   
-    // Arte
     {
       title: "Historia del Arte",
       author: "Ernst Gombrich",
@@ -121,13 +117,11 @@ const resources = [
     }
   ];
   
-  // Referencias al DOM
   const resourcesContainer = document.getElementById("resources-container");
   const pdfViewer = document.getElementById("pdf-viewer");
   const pdfFrame = document.getElementById("pdf-frame");
   const closePdfBtn = document.getElementById("close-pdf");
   
-  // Función para agrupar recursos por categoría
   function groupByCategory(resources) {
     const grouped = {};
     resources.forEach(resource => {
@@ -139,7 +133,6 @@ const resources = [
     return grouped;
   }
   
-  // Mostrar recursos agrupados
   function displayResources(resources) {
     const grouped = groupByCategory(resources);
     resourcesContainer.innerHTML = "";
@@ -166,18 +159,15 @@ const resources = [
     }
   }
   
-  // Abrir el visor de PDF
   function viewPdf(pdfUrl) {
     pdfFrame.src = pdfUrl;
     pdfViewer.style.display = "flex";
   }
   
-  // Cerrar el visor de PDF
   closePdfBtn.addEventListener("click", () => {
     pdfViewer.style.display = "none";
     pdfFrame.src = "";
   });
   
-  // Mostrar los recursos al cargar la página
   displayResources(resources);
   
